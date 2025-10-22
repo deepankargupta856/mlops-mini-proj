@@ -1,4 +1,4 @@
 [core]
-    remote = c:\users\deepa\appdata\local\temp
-['remote "c:\users\deepa\appdata\local\temp"']
-    url = ../myremote
+    remote = myremote
+['remote "myremote"']
+    url = C:\users\deepa\appdata\local\temp
