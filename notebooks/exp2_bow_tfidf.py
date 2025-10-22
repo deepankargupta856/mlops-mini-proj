@@ -23,8 +23,7 @@ import os
 
 import dagshub
 
-dagshub.init(repo_owner='deepankargupta856', repo_name='mlops-mini-proj', mlflow=True)
-mlflow.set_tracking_uri('https://dagshub.com/deepankargupta856/mlops-mini-proj.mlflow')
+mlflow.set_tracking_uri('http://127.0.0.1:5000')
 
 mlflow.set_experiment("BoW-vs-Tf-Idf")
 # Load the data
@@ -158,7 +157,7 @@ with mlflow.start_run(run_name="All Experiments") as parent_run:
                 mlflow.log_metric("f1_score", f1)
                 
                 # Log model
-                #mlflow.sklearn.log_model(model, "model")
+                mlflow.sklearn.log_model(model, "model")
                 
                 # Save and log the notebook
                 #mlflow.log_artifact(__file__)

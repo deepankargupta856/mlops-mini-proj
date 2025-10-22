@@ -16,8 +16,7 @@ import numpy as np
 import os
 import dagshub
 
-dagshub.init(repo_owner='deepankargupta856', repo_name='mlops-mini-proj', mlflow=True)
-mlflow.set_tracking_uri('https://dagshub.com/deepankargupta856/mlops-mini-proj.mlflow')
+mlflow.set_tracking_uri('http://127.0.0.1:5000')
 
 # Load the data
 # Load the data
@@ -148,4 +147,4 @@ with mlflow.start_run():
     #mlflow.log_artifact(__file__)
 
     # Log model
-    #mlflow.sklearn.log_model(grid_search.best_estimator_, "model")
+    mlflow.sklearn.log_model(grid_search.best_estimator_, "model")

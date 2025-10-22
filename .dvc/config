@@ -1,0 +1,4 @@
+[core]
+    remote = c:\users\deepa\appdata\local\temp
+['remote "c:\users\deepa\appdata\local\temp"']
+    url = ../myremote
